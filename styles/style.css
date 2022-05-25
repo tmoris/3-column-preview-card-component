@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+
+  /* colors */
+--clr-Brightorange: hsl(31, 77%, 52%);
+--clr-Darkcyan: hsl(184, 100%, 22%);
+--clr-Verydark-cyan: hsl(179, 100%, 13%);
+
+/*  paragraphs color */
+--clr-white : hsla(0, 0%, 100%, 0.75);
+
+/* background, headings, buttons */
+--clr-Verylightgray : hsl(0, 0%, 95%);
+
+/* font size */
+--fs-body: 0.9375rem;
+--fs-normal: 1rem;
+--fs-medium: 1.5rem;
+--fs-large: 2.5rem;
+--fs-small: 0.875rem;
+
+/* font-family */
+--ff-primary: 'Lexend Deca', sans-serif ;
+--ff-secondary:  'Big Shoulders Display', cursive ;
+
+}
+/* utility class */
+.orange {
+  color: var(--clr-Brightorange);
+}
+.lightcyan {
+  color: var(--clr-Darkcyan)
+}
+.darkcyan {
+  color: var(--clr-Verydark-cyan);
+}
+/* general styles */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background-color: var(--clr-Verylightgray);
+  color: var(--clr-white);
+}
+.container {
+  width: 90%;
+  max-width: 80rem;
+  padding-inline: 2em;
+  margin-inline: auto;
+}
+main {
+  margin: 4em 0;
+}
+.flex {
+  display: flex;
+}
+.flex>* {
+  flex-basis: 100%;
+}
+.preview-section {
+padding: 2em 1em;
+}
+.preview-title {
+text-transform: uppercase;
+color: var(--clr-Verylightgray);
+padding: 1em 0;
+}
+.preview-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--clr-Verylightgray);
+  padding: 0.5em 0.75em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.preview-link:hover,
+.preview-link:focus {
+  background-color: inherit;
+  color: var(--clr-white);
+  border: .1em solid;
+}
+.preview-text {
+  margin-bottom: 3em;
+  max-width: 31.25rem;
+}
+.Sedans {
+background-color: var(--clr-Brightorange);
+}
+.suvs {
+background-color: var(--clr-Darkcyan);
+}
+.luxury {
+  background-color: var(--clr-Verydark-cyan);
+}
+.attribution { 
+  font-size: 11px; text-align: center;
+  color: #000;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 37.5rem) {
+  body{
+    font-size: var(--fs-small);
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .preview-text {
+    max-width: 90%;
+  }
+}
