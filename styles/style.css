@@ -47,6 +47,12 @@ body {
   background-color: var(--clr-Verylightgray);
   color: var(--clr-white);
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .container {
   width: 90%;
   max-width: 80rem;
