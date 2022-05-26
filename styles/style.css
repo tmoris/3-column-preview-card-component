@@ -54,6 +54,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+.flex-center > * {
+ width: 100%;
+}
 .container {
   width: 90%;
   max-width: 80rem;
